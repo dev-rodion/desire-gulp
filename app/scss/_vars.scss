@@ -1,5 +1,10 @@
+$black: #363838;
+$default: #5a5a5a;
+$gray: #a1a1a1;
+$light-gray: #dfdfdf;
+
 %title-font {
   font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-  color: #363838;
+  font-weight: 700;
+  color: $black;
 }

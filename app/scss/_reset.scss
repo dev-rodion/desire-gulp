@@ -6,6 +6,7 @@ html{
 *::after,
 *::before{
   box-sizing: inherit;
+  outline: none;
 }
 
 ul[class],
@@ -30,6 +31,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  font-size: inherit;
 }
 
 ul[class] {
