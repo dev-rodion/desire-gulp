@@ -1,8 +1,42 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
 
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+  }
+  &__btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+}
 
-@import 'media';
+.logo {
+  margin: 0 auto;
+}
+
+.menu {
+  padding-right: 15px;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    padding-right: 45px;
+    padding-left: 35px;
+  }
+  &__link {
+    @extend %title-font;
+    color: rgba(#363838, 0.9);
+    line-height: 22px;
+  }
+}
+
+@import "media";

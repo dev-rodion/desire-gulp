@@ -1,22 +1,31 @@
 {
-  "name": "gulp-start",
+  "name": "gulp4",
   "version": "1.0.0",
-  "description": "",
+  "description": "Building Gulp 4 for a convenient and fast site layout",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vadym Prokopchuk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-rodion/gulp4.git"
+  },
+  "author": "Dev Rodion",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-rodion/gulp4/issues"
+  },
+  "homepage": "https://github.com/dev-rodion/gulp4#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify-es": "^2.0.0",
-    "jquery": "^3.5.1"
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify-es": "^3.0.0",
+    "gulp-w3c-html-validator": "^5.1.0",
+    "sass": "^1.43.5"
   }
 }
