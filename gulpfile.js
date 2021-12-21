@@ -43,7 +43,7 @@ function styles() {
 
 function scripts() {
   return src(["app/js/main.js"]) // finds and selects files
-    .pipe(concat("script.min.js")) // concatenates the js files and sets the filename
+    .pipe(concat("main.min.js")) // concatenates the js files and sets the filename
     .pipe(uglify()) // uglifies js code
     .pipe(dest("app/js/")) // sends file to app/js directory
     .pipe(browserSync.stream()); // refreshes the browser page
@@ -71,7 +71,7 @@ function watching() {
 function build() {
   return src([
       "app/css/style.min.css", // selects style.min.js in app/css directory
-      "app/js/script.min.js", // selects script.min.js in app/js directory
+      "app/js/main.min.js", // selects script.min.js in app/js directory
       "app/fonts/**/*", // selects all font files in app/fonts directory
       "app/*.html", // selects all html files in app/ directory
   ], { base: "app" }) // indicates to preserve nesting of files and directories
