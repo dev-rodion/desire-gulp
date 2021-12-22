@@ -8,11 +8,16 @@ body {
   font-size: 16px;
   height: 27px;
   font-weight: 400;
-	color: $default;
+  color: $default;
   overflow-x: hidden;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @extend %title-font;
 }
 
@@ -33,4 +38,33 @@ h1,h2,h3,h4,h5,h6 {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  li {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  button {
+    width: 8px;
+    height: 8px;
+    background-color: $black;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 0;
+    cursor: pointer;
+  }
+  li.slick-active {
+    button {
+      background-color: #ffef35;
+    }
+  }
 }

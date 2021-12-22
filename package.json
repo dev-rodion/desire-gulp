@@ -19,6 +19,7 @@
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
+    "embla-carousel": "^6.0.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
@@ -26,6 +27,9 @@
     "gulp-sass": "^5.0.0",
     "gulp-uglify-es": "^3.0.0",
     "gulp-w3c-html-validator": "^5.1.0",
-    "sass": "^1.43.5"
-  }
+    "jquery": "^3.6.0",
+    "sass": "^1.43.5",
+    "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {}
 }

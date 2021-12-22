@@ -28,7 +28,10 @@ function validateHtml() {
 }
 
 function styles() {
-  return src(["app/scss/style.scss"]) // finds and selects files
+  return src([
+    "node_modules/slick-carousel/slick/slick.css",
+    "app/scss/style.scss"
+  ]) // finds and selects files
     .pipe(sass({ // converts scss to css
         outputStyle: "compressed", // compress css to one line
     }))
@@ -42,7 +45,12 @@ function styles() {
 }
 
 function scripts() {
-  return src(["app/js/main.js"]) // finds and selects files
+  return src([
+    "app/js/main.js",
+    "node_modules/jquery/dist/jquery.min.js",
+    "node_modules/slick-carousel/slick/slick.min.js",
+    "app/js/jq-main.js",
+  ]) // finds and selects files
     .pipe(concat("main.min.js")) // concatenates the js files and sets the filename
     .pipe(uglify()) // uglifies js code
     .pipe(dest("app/js/")) // sends file to app/js directory
@@ -63,7 +71,7 @@ function images() {
 
 function watching() {
   watch(["app/scss/**/*.scss"], styles); // calls the styles function when scss files change in app/scss directory
-  watch(["app/js/main.js"], scripts); // calls the scripts function when main.js file change in app/js directory
+  watch(["app/js/*.js", "!app/js/main.min.js"], scripts); // calls the scripts function when main.js file change in app/js directory
   watch(["app/*.html"], validateHtml); // calls the scripts function when main.js file change in app/js directory
   watch(["app/*.html"]).on("change", browserSync.reload); // refreshes the browser page when HTML files change
 }
