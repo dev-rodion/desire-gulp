@@ -28,6 +28,8 @@
     "gulp-uglify-es": "^3.0.0",
     "gulp-w3c-html-validator": "^5.1.0",
     "jquery": "^3.6.0",
+    "magnific-popup": "^1.1.0",
+    "mixitup": "^3.3.1",
     "sass": "^1.43.5",
     "slick-carousel": "^1.8.1"
   },

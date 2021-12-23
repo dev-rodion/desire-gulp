@@ -429,15 +429,11 @@
 
 .works-path {
   padding: 80px 0 30px;
-  &__inner {
-  }
   &__title {
     text-align: center;
     font-size: 36px;
     line-height: 51px;
     margin-bottom: 10px;
-  }
-  &__items {
   }
   &__items-box {
     display: flex;
@@ -481,9 +477,9 @@
     margin-right: 15px;
   }
   &__item-title {
+    line-height: 23px;
   }
   &__item-text {
-    line-height: 23px;
     margin-top: 14px;
   }
   &__line {
@@ -502,6 +498,58 @@
       border-radius: 50%;
       background-color: $black;
     }
+  }
+}
+
+.gallery {
+  padding: 80px 0 90px;
+  &__buttons {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    margin: 0 12.5px;
+    padding: 6px 20px;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 600;
+    background: none;
+    color: $black;
+    border: 1px solid $black;
+    opacity: 0.6;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    &.mixitup-control-active {
+      color: $black;
+      background-color: #ffef35;
+      border-color: #ffef35;
+      opacity: 1;
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(auto, 450px);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+  }
+  &__item {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+  &__item:nth-child(1) {
+    grid-column: span 5;
+    grid-row: span 2;
+  }
+  &__item:nth-child(6) {
+    grid-column: 7 / span 5;
+    grid-row: 3 / span 2;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
