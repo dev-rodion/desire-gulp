@@ -503,6 +503,9 @@
 
 .gallery {
   padding: 80px 0 90px;
+  &__title {
+    display: none;
+  }
   &__buttons {
     text-align: center;
     margin-bottom: 40px;
@@ -552,5 +555,45 @@
     object-fit: cover;
   }
 }
+.blog-box {
+  padding-bottom: 100px;
+  &__inner {}
+  &__title {
+    font-size: 36px;
+    line-height: 51px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  &__item {}
+  &__item-img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  &__links {
+    font-weight: 600;
+    font-size: 14px;
+    color: #707070;
+    margin-bottom: 7px;
+  }
+  &__date {}
+  &__author {
+    color: inherit;
+  }
+  &__theme {
+    color: inherit;
+  }
+  &__item-title {
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+
 
 @import "media";

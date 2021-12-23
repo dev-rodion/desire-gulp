@@ -4,7 +4,7 @@ $(function () {
     arrows: false,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 5000,
   });
 
   const galleryMixer = mixitup(".gallery__inner", {
