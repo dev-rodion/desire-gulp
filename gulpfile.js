@@ -29,8 +29,6 @@ function validateHtml() {
 
 function styles() {
   return src([
-    // "node_modules/magnific-popup/dist/magnific-popup.css",
-    // "node_modules/slick-carousel/slick/slick.css",
     "app/scss/style.scss"
   ]) // finds and selects files
     .pipe(sass({ // converts scss to css
@@ -51,7 +49,7 @@ function scripts() {
     "node_modules/jquery/dist/jquery.min.js",
     "node_modules/slick-carousel/slick/slick.min.js",
     "node_modules/mixitup/dist/mixitup.min.js",
-    "node_modules/magnific-popup/dist/jquery.magnific-popup.js",
+    "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js",
     "app/js/jq-main.js",
   ]) // finds and selects files
     .pipe(concat("main.min.js")) // concatenates the js files and sets the filename

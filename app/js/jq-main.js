@@ -7,29 +7,24 @@ $(function () {
     autoplaySpeed: 5000,
   });
 
-  const galleryMixer = mixitup(".gallery__inner", {
-    load: {
-      filter: ".living",
-    },
-    animation: {
-      effects: "fade",
-      effectsIn: "fade",
+  if ($(".gallery__inner").length !== 0) {
+    const galleryMixer = mixitup(".gallery__inner", {
+      load: {
+        filter: ".living",
+      },
+      animation: {
+        effects: "fade",
+        effectsIn: "fade",
+      },
+    });
+  }
+
+  $('[data-fancybox="gallery"]').fancybox();
+
+  $("[data-fancybox]").fancybox({
+    youtube: {
+      controls: 0,
+      showinfo: 0,
     },
   });
-
-	$('.gallery__items').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-with-zoom mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1]
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-		}
-	});
 });
-
