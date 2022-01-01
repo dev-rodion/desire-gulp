@@ -606,6 +606,8 @@
 }
 
 .breadcrumbs {
+  position: relative;
+  z-index: 1;
   background-color: rgba(#dfdfdf, 0.5);
   padding: 13px 14px;
   &__list {
@@ -783,5 +785,19 @@
   }
 }
 
+.map {
+  position: relative;
+  margin-top: -53px;
+  margin-bottom: 55px;
+  padding-bottom: 570px;
+  background-color: rgba(#AADAFF, .5);
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
 
 @import "media";
