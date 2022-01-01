@@ -9,9 +9,10 @@ $(function () {
 
   $(".contact__slider").slick({
     slidesToShow: 10,
-    slidesToScroll: 10,
+    slidesToScroll: 5,
     dots: true,
     arrows: false,
+    infinite: false
   });
 
   if ($(".gallery__inner").length !== 0) {

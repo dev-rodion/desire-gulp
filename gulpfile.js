@@ -36,8 +36,7 @@ function styles() {
     }))
     .pipe(concat("style.min.css")) // concatenates the files and sets the filename
     .pipe(autoprefixer({ // adds css prefixes for old browsers
-        grid: "autoplace", // adds IE 10-11 prefixes for grid layout properties
-        overrideBrowserslist: ["last 10 version"], // adds css prefixes for the latest 10 versions in every browser
+      overrideBrowserslist: ["last 10 version"], // adds css prefixes for the latest 10 versions in every browser
     }))
     .pipe(dest("app/css")) // sends file to app/css directory
     .pipe(browserSync.stream()); // refreshes the browser page
