@@ -7,6 +7,13 @@ $(function () {
     autoplaySpeed: 5000,
   });
 
+  $(".contact__slider").slick({
+    slidesToShow: 10,
+    slidesToScroll: 10,
+    dots: true,
+    arrows: false,
+  });
+
   if ($(".gallery__inner").length !== 0) {
     const galleryMixer = mixitup(".gallery__inner", {
       load: {

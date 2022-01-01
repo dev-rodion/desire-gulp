@@ -74,3 +74,23 @@ h6 {
     }
   }
 }
+
+.info-email {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  color: $black;
+  font-weight: 600;
+  padding-left: 30px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: url("../images/envelope.svg") center center;
+    background-size: contain;
+    width: 16px;
+    height: 100%;
+  }
+}
