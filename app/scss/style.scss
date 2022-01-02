@@ -1134,4 +1134,212 @@
   }
 }
 
+.blog-one {
+  &__content {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    p {
+      margin-bottom: 15px;
+    }
+    blockquote {
+      padding: 30px 42px;
+      margin: -15px 0 15px;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 38px;
+      font-style: italic;
+    }
+    blockquote h5 {
+      position: relative;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      font-style: normal;
+      padding-top: 23px;
+      margin-top: 23px;
+      &::before {
+        content: "";
+        display: block;
+        width: 200px;
+        height: 1px;
+        background-color: $gray;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  &__tags {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #dfdfdf;
+    .blog__tags-title {
+      font-size: 20px;
+      line-height: 31px;
+      margin-bottom: 10px;
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 68px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+  &__link-arrow {
+    display: block;
+    width: 12px;
+    height: 23px;
+    margin-right: 21px;
+  }
+  &__link:last-child {
+    text-align: right;
+    .blog-one__link-arrow {
+      margin-right: 0;
+      margin-left: 21px;
+    }
+  }
+  &__link-text {
+    max-width: 243px;
+    color: $default;
+  }
+  &__comments {
+    margin-bottom: 40px;
+  }
+  &__comments-title {
+    font-size: 20px;
+    line-height: 31px;
+    margin-bottom: 16px;
+  }
+  &__comments-list {
+    .blog-one__comments-list {
+      padding-top: 15px;
+      padding-left: 15px;
+      margin-left: 30px;
+      border-left: 1px solid $gray;
+    }
+  }
+  &__comments-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+  }
+  &__comments-avatar {
+    display: block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 13px;
+  }
+  &__comments-info {
+    flex: 1;
+  }
+  &__comments-name {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  &__comments-date {
+    font-size: 14px;
+    line-height: 20px;
+    color: #a1a1a1;
+    margin-bottom: 10px;
+  }
+
+  &__comments-text {
+    margin-bottom: 15px;
+  }
+  &__comments-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__comments-report,
+  &__comments-reply {
+    padding: 0;
+    font-size: 14px;
+    line-height: 28px;
+    color: $default;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+  }
+  &__comments-report {
+    color: #f17878;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 13px 10px;
+  }
+  &__form-title {
+    grid-column: span 2;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 25px;
+  }
+  &__form-area,
+  &__form-input {
+    border: 1px solid #dfdfdf;
+    border-radius: 20px;
+    padding: 6px 15px;
+    line-height: 28px;
+    &::placeholder {
+      color: #a1a1a1;
+    }
+  }
+  &__form-area {
+    grid-column: span 2;
+    min-height: 125px;
+  }
+  &__form-input {
+  }
+  &__form-checkbox {
+    grid-column: span 2;
+    width: fit-content;
+    margin-top: 10px;
+    color: #a1a1a1;
+    cursor: pointer;
+    input[type="checkbox"] {
+      display: none;
+    }
+    input[type="checkbox"]:checked ~ span::before {
+      content: "✓";
+      background-color: $gray;
+    }
+    span {
+      display: flex;
+      align-items: center;
+    }
+    span::before {
+      content: "";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 21px;
+      height: 21px;
+      border: 1px solid $gray;
+      color: #fff;
+      margin-right: 11px;
+    }
+  }
+  &__form-btn {
+    grid-column: span 2;
+    margin-top: 10px;
+    color: #fffff0;
+    background-color: $black;
+    border: none;
+    border-radius: 21px;
+    padding: 6px 15px;
+    min-width: 160px;
+    width: fit-content;
+  }
+}
+
 @import "media";
