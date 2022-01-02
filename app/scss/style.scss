@@ -149,13 +149,6 @@
     border-radius: 21px;
     border: 1px solid rgba($black, 0.7);
     background: none;
-    &::placeholder {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      font-style: 16px;
-      line-height: 27px;
-      color: $gray;
-    }
   }
   &__form-btn {
     padding: 6px 12px 6px 12px;
@@ -911,7 +904,122 @@
     background-color: rgba(#fff, 0.6);
     padding: 15px;
     opacity: 0;
-    transition: .3s;
+    transition: 0.3s;
+  }
+}
+
+.blog {
+  margin-top: 60px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__tags {
+    margin-bottom: 50px;
+  }
+  &__tags-title {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 16px;
+  }
+  &__tags-link {
+    display: inline-block;
+    color: $gray;
+    border: 1px solid $gray;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 600;
+    padding: 0 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 14px;
+  }
+  &__social {
+    display: flex;
+    margin-left: -5px;
+    margin-bottom: 50px;
+  }
+  &__social-item {
+    display: block;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__social-link {
+    display: block;
+  }
+  &__social-icon {
+    padding: 5px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.aside {
+  width: 350px;
+  margin-left: 30px;
+  &__search {
+    position: relative;
+    margin-bottom: 44px;
+  }
+  &__search-input {
+    width: 100%;
+    padding: 6px 38px 6px 18px;
+    border: 1px solid rgba($black, 0.7);
+    border-radius: 20px;
+  }
+  &__search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    border: none;
+    padding: 10px 15px 10px 5px;
+    background: none;
+    cursor: pointer;
+    img {
+      display: block;
+      width: 17px;
+      height: 17px;
+    }
+  }
+}
+
+.blog-category {
+  margin-bottom: 35px;
+  &__title {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 14px;
+  }
+  &__item {
+    margin-bottom: 12px;
+  }
+  &__link {
+    color: $default;
+  }
+}
+
+.recent-posts {
+  margin-bottom: 40px;
+  &__title {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 24px;
+  }
+  &__item {
+    margin-bottom: 10px;
+  }
+  &__item-title {
+    display: block;
+    color: $default;
+  }
+  &__item-date,
+  &__item-author {
+    font-size: 14px;
+    line-height: 28px;
+    color: $gray;
   }
 }
 

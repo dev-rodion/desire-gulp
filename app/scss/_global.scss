@@ -12,6 +12,13 @@ body {
   overflow-x: hidden;
 }
 
+::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  height: 27px;
+  color: $gray;
+}
+
 h1,
 h2,
 h3,
