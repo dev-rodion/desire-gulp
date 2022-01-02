@@ -101,3 +101,26 @@ h6 {
     height: 100%;
   }
 }
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  padding: 10px 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  img {
+    display: block;
+    width: 10px;
+    height: 17px;
+    object-fit: cover;
+  }
+  &--next {
+    right: 10px;
+  }
+  &--prev {
+    left: 10px;
+  }
+}
