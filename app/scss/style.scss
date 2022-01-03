@@ -624,11 +624,14 @@
   position: relative;
   z-index: 1;
   background-color: rgba(#dfdfdf, 0.5);
-  padding: 13px 14px;
   &__list {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     align-items: center;
+    white-space: nowrap;
+    overflow-x: auto;
+    height: 54px;
+    padding: 0 10px !important;
   }
   &__item {
     font-size: 14px;
