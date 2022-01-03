@@ -1,5 +1,24 @@
 // ==========
 @media (max-width: 1600px) {
+  .top {
+    &__inner {
+      padding: 20px 0;
+      &::after {
+        height: 100%;
+      }
+    }
+    &__slider-info {
+      padding-right: 15px;
+    }
+    &__slider-title {
+      font-size: 90px;
+      line-height: 110px;
+    }
+    &__slider-img {
+      margin-left: 50px;
+      height: 640px;
+    }
+  }
 }
 // ==========
 
@@ -8,17 +27,56 @@
   .footer__menu {
     margin-right: auto;
   }
+  .top {
+    &__slider-title {
+      font-size: 80px;
+      line-height: 90px;
+    }
+    &__slider-img {
+      margin-left: 15px;
+      height: 540px;
+    }
+  }
 }
 // ==========
 
 // ==========
 @media (max-width: 992px) {
-  .footer{
+  .footer {
     &__info {
       flex: 1;
     }
     &__social {
       margin: 0 20px 0 50px;
+    }
+  }
+  .top {
+    &__slider-item {
+      position: relative;
+      flex-direction: column;
+      padding-bottom: 10px;
+    }
+    &__slider-img {
+      margin-left: 15px;
+      width: auto;
+      max-width: 100%;
+      height: 450px;
+      object-fit: contain;
+    }
+    &__slider-info {
+      bottom: 0;
+      right: 0;
+      margin: 0 auto;
+      padding: 15px;
+      text-align: center;
+    }
+    &__slider-title {
+      font-size: 55px;
+      line-height: 65px;
+      &::after {
+        right: 0;
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -68,6 +126,11 @@
       margin: 0 auto;
     }
   }
+  .top {
+    &__slider-img {
+      height: 400px;
+    }
+  }
 }
 // ==========
 
@@ -102,11 +165,11 @@
     padding: 0;
     opacity: 0;
     transition: 1s;
-    transition: opacity .5s, transform 0s .5s;
+    transition: opacity 0.5s, transform 0s 0.5s;
     &--open {
       opacity: 1;
       transform: translateY(25px);
-      transition: opacity .3s, transform 0s;
+      transition: opacity 0.3s, transform 0s;
     }
     &__list {
       flex-direction: column;
@@ -119,7 +182,7 @@
       display: block;
       padding: 15px 0;
     }
-    &__link--active{
+    &__link--active {
       color: #fff;
       &::after {
         height: 100%;
@@ -139,6 +202,15 @@
     &__copyright {
       padding: 30px 0;
       font-size: 14px;
+    }
+  }
+  .top {
+    &__slider-img {
+      height: 300px;
+    }
+    &__slider-title {
+      font-size: 45px;
+      line-height: 55px;
     }
   }
 }
