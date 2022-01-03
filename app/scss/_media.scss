@@ -152,6 +152,18 @@
   .collection {
     grid-template-columns: repeat(2, 1fr);
   }
+  .decor {
+    min-height: fit-content;
+    padding: 80px 0 90px;
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 22px;
+    }
+    &__text {
+      padding-left: 0;
+    }
+  }
 }
 // ==========
 
