@@ -127,6 +127,31 @@
   .map {
     padding-bottom: 40%;
   }
+  .blog {
+    &__items {
+      width: 69%;
+    }
+    &__item-info {
+      margin: 15px 0 5px;
+    }
+    &__item-title {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+    &__blockquote {
+      padding: 25px;
+      font-size: 22px;
+      line-height: 30px;
+    }
+    &__blockquote-author {
+      padding-top: 15px;
+      margin-top: 15px;
+    }
+  }
+  .aside {
+    margin-left: 20px;
+  }
 }
 // ==========
 
@@ -191,6 +216,11 @@
     &__title {
       font-size: 30px;
       line-height: 40px;
+    }
+  }
+  .blog {
+    &__items {
+      width: 65%;
     }
   }
 }
@@ -322,6 +352,18 @@
       padding-bottom: 20px;
       margin-bottom: 30px;
     }
+  }
+  .blog {
+    &__inner {
+      flex-direction: column;
+    }
+    &__items {
+      width: 100%;
+    }
+  }
+  .aside {
+    width: 100%;
+    margin: 70px 0;
   }
 }
 // ==========
@@ -510,7 +552,7 @@
   .map {
     padding-bottom: 300px;
   }
-  .contact{
+  .contact {
     &__social-item {
       padding-right: 15px;
     }
@@ -529,6 +571,13 @@
     &__link {
       margin-bottom: 0;
       padding-bottom: 0;
+    }
+  }
+  .blog {
+    &__blockquote {
+      padding: 25px 15px;
+      font-size: 20px;
+      line-height: 26px;
     }
   }
 }
