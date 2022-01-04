@@ -618,6 +618,22 @@
   &__theme {
     color: inherit;
   }
+  
+  &__item-link {
+    position: relative;
+    display: block;
+    padding-bottom: 56.5%;
+    background-color: $gray;
+    margin-bottom: 15px;
+  }
+  &__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   &__item-title {
     font-size: 24px;
     line-height: 38px;

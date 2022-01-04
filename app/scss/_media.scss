@@ -60,6 +60,15 @@
       margin: 5px;
     }
   }
+  .blog-box {
+    &__items {
+      grid-gap: 15px;
+    }
+    &__item-title {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
 }
 // ==========
 
@@ -195,6 +204,12 @@
   .gallery {
     &__items {
       grid-gap: 10px;
+    }
+  }
+  .blog-box {
+    &__items {
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
     }
   }
 }
