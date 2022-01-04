@@ -1,4 +1,13 @@
 $(function () {
+
+  $(window).on("load resize", function(){
+    if ($(window).width() <= 540) {
+      $('.works-path__item--measurements').appendTo($('.works-path__items-box'));
+    } else {
+      $('.works-path__item--measurements').appendTo($('.works-path__inner'));
+    }
+  });
+
   $(".top__slider").slick({
     dots: true,
     arrows: false,

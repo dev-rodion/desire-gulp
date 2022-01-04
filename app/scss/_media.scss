@@ -97,6 +97,11 @@
       margin-bottom: 10px;
     }
   }
+  .works-path {
+    &__item--production {
+      margin-left: auto;
+    }
+  }
 }
 // ==========
 
@@ -162,6 +167,18 @@
     }
     &__text {
       padding-left: 0;
+    }
+  }
+  .works-path {
+    &__item--consultation {
+      width: 250px;
+    }
+    &__item--production {
+      width: 200px;
+    }
+    &__item--measurements {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
@@ -257,6 +274,50 @@
     &__slider-title {
       font-size: 45px;
       line-height: 55px;
+    }
+  }
+  .works-path {
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__items-box {
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
+      border-left: 2px solid #363838;
+      padding: 15px 0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -6px;
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #363838;
+      }
+    }
+    &__item {
+      width: 100%;
+      padding: 0 15px;
+      padding-left: 25px;
+      margin: 15px 0 !important;
+      &::before {
+        display: block !important;
+        width: 15px;
+        height: 2px;
+        top: 0px;
+      }
+    }
+    &__item--production {
+      order: 1;
+    }
+    &__item-title {
+      flex: 1;
+    }
+    &__line {
+      display: none;
     }
   }
 }
