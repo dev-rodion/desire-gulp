@@ -25,6 +25,14 @@
   .collection {
     grid-gap: 15px;
   }
+  .inspiration {
+    &__img {
+      margin-left: 0;
+    }
+    &__content {
+      padding-left: 30px;
+    }
+  }
 }
 // ==========
 
@@ -92,6 +100,20 @@
       padding-bottom: 35%;
     }
   }
+  .inspiration {
+    &__img {
+      max-width: 350px;
+    }
+    &__list {
+      margin-top: 30px;
+    }
+    &__item {
+      margin-top: 15px;
+    }
+    &__item-content {
+      padding-bottom: 10px;
+    }
+  }
 }
 // ==========
 
@@ -144,6 +166,18 @@
   .works-path {
     &__item--production {
       margin-left: auto;
+    }
+  }
+  .inspiration {
+    &__img {
+      max-width: 300px;
+    }
+    &__content {
+      padding-left: 15px;
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
     }
   }
 }
@@ -244,6 +278,20 @@
   }
   .fancybox-slide--video {
     padding: 40px 15px;
+  }
+  .inspiration {
+    &::after {
+      top: 370px;
+    }
+    &__inner {
+      flex-direction: column;
+    }
+    &__img {
+      margin: 0 auto 20px;
+    }
+    &__content {
+      padding-left: 0;
+    }
   }
 }
 // ==========

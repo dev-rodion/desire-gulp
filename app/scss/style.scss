@@ -754,8 +754,10 @@
   &__img {
     display: block;
     max-width: 430px;
+    width: 100%;
     height: auto;
     margin-left: -230px;
+    object-fit: contain;
   }
   &__content {
     padding-left: 70px;
