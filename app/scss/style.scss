@@ -689,6 +689,7 @@
   &__prev-title {
     font-size: 60px;
     line-height: 80px;
+    text-align: center;
   }
   &__content {
     padding: 130px 0 40px;
@@ -718,12 +719,17 @@
     }
   }
   &__popup {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    background-color: $gray;
     height: 414px;
     background-position: center top;
     background-size: cover;
+  }
+  &__popup-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
   }
 }
 

@@ -80,6 +80,18 @@
       line-height: 30px;
     }
   }
+  .about {
+    &__prev {
+      padding: 100px 0;
+    }
+    &__content {
+      padding: 50px 0 25px;
+    }
+    &__popup {
+      height: fit-content;
+      padding-bottom: 35%;
+    }
+  }
 }
 // ==========
 
@@ -220,6 +232,18 @@
       grid-template-columns: 1fr;
       grid-gap: 30px;
     }
+  }
+  .about {
+    &__prev-title {
+      font-size: 45px;
+      line-height: 60px;
+    }
+    &__popup {
+      padding-bottom: 50%;
+    }
+  }
+  .fancybox-slide--video {
+    padding: 40px 15px;
   }
 }
 // ==========
@@ -387,9 +411,17 @@
       grid-row: span 2;
     }
   }
+  .about {
+    &__popup {
+      padding-bottom: 56.6%;
+    }
+    &__popup-play {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .fancybox-slide--video {
+    padding: 40px 10px;
+  }
 }
 // ==========
-
-@media (max-width: 425px) {
-  
-}
