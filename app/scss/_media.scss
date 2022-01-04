@@ -33,6 +33,10 @@
       padding-left: 30px;
     }
   }
+  .map {
+    margin-top: 0;
+    padding-bottom: 35%;
+  }
 }
 // ==========
 
@@ -119,6 +123,9 @@
     &__item {
       padding: 15px;
     }
+  }
+  .map {
+    padding-bottom: 40%;
   }
 }
 // ==========
@@ -306,6 +313,9 @@
       padding: 25px;
     }
   }
+  .map {
+    padding-bottom: 55%;
+  }
 }
 // ==========
 
@@ -484,12 +494,14 @@
   .fancybox-slide--video {
     padding: 40px 10px;
   }
-  
   .partners {
     &__item {
       width: 50%;
       padding: 10px;
     }
+  }
+  .map {
+    padding-bottom: 300px;
   }
 }
 // ==========
