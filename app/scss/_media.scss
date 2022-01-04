@@ -316,6 +316,13 @@
   .map {
     padding-bottom: 55%;
   }
+  .contact {
+    &__title {
+      line-height: 50px;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+  }
 }
 // ==========
 
@@ -502,6 +509,17 @@
   }
   .map {
     padding-bottom: 300px;
+  }
+  .contact{
+    &__social-item {
+      padding-right: 15px;
+    }
+    &__form {
+      grid-template-columns: 1fr;
+    }
+    &__form-area {
+      grid-column: span 1;
+    }
   }
 }
 // ==========
