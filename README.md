@@ -1,24 +1,12 @@
-# gulp4
+# Desire Web
 
-Building Gulp 4 for a convenient and fast site layout. <br />
-To use this build of Gulp 4, you need to have Node.js, npm and gulp installed globally.
+Demo: https://dev.rodion.org.ua/desire/
 
-## Available Scripts
+Desire is a markupt multi-page site. <br />
+Technologies: HTML, CSS (Scss), JS and jQuery and git with GitHub. <br />
+I only did markup without CMS or backend languages. <br />
 
-### `npm install`
-
-Install all packages to the `node_modules` folder.<br />
-
-
-### `gulp`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-
-### `gulp build`
-
-Creates a production version of the project to the `dist` folder.
+### JQuery Libraries:
+"slick-slider" is a library for creating sliders. <br />
+"fancybox" is a library for creating pop-up windows for images and videos. <br />
+"mixitup" is a library for sorting items. <br />
