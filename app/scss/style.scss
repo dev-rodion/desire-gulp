@@ -624,7 +624,7 @@
   &__theme {
     color: inherit;
   }
-  
+
   &__item-link {
     position: relative;
     display: block;
@@ -729,7 +729,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -947,28 +947,28 @@
 .contact-slider {
   margin-bottom: 100px;
   &__link {
-    height: 170px;
+    display: block;
     position: relative;
     margin-bottom: 35px;
+    padding: 8px;
     &:hover .contact-slider__title {
       opacity: 1;
     }
   }
   &__img {
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    right: 7px;
-    bottom: 7px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
     object-fit: cover;
     object-position: center;
   }
   &__title {
     position: absolute;
-    top: 7px;
-    left: 7px;
-    right: 7px;
-    bottom: 7px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -981,6 +981,7 @@
     padding: 15px;
     opacity: 0;
     transition: 0.3s;
+    padding: 15px;
   }
 }
 

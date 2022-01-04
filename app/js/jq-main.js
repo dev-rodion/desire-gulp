@@ -21,7 +21,48 @@ $(function () {
     slidesToScroll: 5,
     dots: true,
     arrows: false,
-    infinite: false
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 4
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 4
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 5
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4
+        }
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: false,
+          arrows: true,
+          prevArrow: "<button class='slider-arrow slider-arrow--prev'><img src='images/arrow-back.svg' alt='prev'/></button>",
+          nextArrow: "<button class='slider-arrow slider-arrow--next'><img src='images/arrow-next.svg' alt='next'/></button>"
+        }
+      }
+    ]
   });
 
   $(".blog__item-slider").slick({

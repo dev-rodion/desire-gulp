@@ -521,5 +521,15 @@
       grid-column: span 1;
     }
   }
+  .contact-slider {
+    margin: 0 -10px 100px;
+    .contact__slider {
+      padding: 0 30px;
+    }
+    &__link {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
 }
 // ==========
