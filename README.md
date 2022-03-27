@@ -1,6 +1,6 @@
 # Desire Web
 
-Demo: https://dev.rodion.org.ua/desire/
+Demo: https://dev-rodion.github.io/desire-gulp/app/
 
 Desire is a markupt multi-page site. <br />
 Technologies: HTML, CSS (Scss), JS and jQuery and git with GitHub. <br />
